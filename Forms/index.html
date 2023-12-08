@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Apply CSS styles to the form container */
+        .form-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-image: url('./NIRU.jpg'); /* Add your image URL here */
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            color: #fff; /* Text color on top of the background image */
+        }
+
+        /* Style form labels and input fields */
+        .form-container label,
+        .form-container input {
+            display: block;
+            margin-bottom: 10px;
+            color: #333; /* Text color for labels and input fields */
+        }
+
+        /* Style the submit button */
+        .form-container button {
+            background-color: #af754c;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Change button color on hover */
+        .form-container button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Contact Us</h2>
+        <form action="submit.php" method="post">
+            <label for="name">Name <lightning-input 
+              type="color" 
+              name="input-color" 
+              label="Favorite color"
+              value="#8DC141"
+            ></lightning-input>:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
